@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Kami</title>
+    <style>
+        :root {
+            --primary: #00ff62;
+            --secondary: #00ff62;
+            --bg: #f9fafb;
+            --text: #1f2937;
+            --white: #ffffff;
+            --muted: #6b7280;
+            --radius: 10px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .contact-info {
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .contact-info h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+        }
+
+        .contact-item strong {
+            color: var(--secondary);
+        }
+
+        form {
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: 25px;
+        }
+
+        form h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: var(--text);
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #d1d5db;
+            border-radius: var(--radius);
+            font-size: 1rem;
+            transition: border 0.2s;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: var(--secondary);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background: var(--secondary);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            form,
+            .contact-info {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hubungi Kami</h1>
+        <p>Kami senang mendengar pendapat dari anda — silakan kirim pesan atau pertanyaan Anda!</p>
+    </header>
+
+    <div class="container">
+        <div class="contact-info">
+            <h2>Informasi Kontak</h2>
+            <div class="contact-item">
+                <strong>Alamat:</strong> Jl. Merdeka No.123, Jakarta
+            </div>
+            <div class="contact-item">
+                <strong>Telepon:</strong> +62 21 1234 5678
+            </div>
+            <div class="contact-item">
+                <strong>Email:</strong> jawahindia@gmail.com
+            </div>
+            <div class="contact-item">
+                <strong>Jam Operasional:</strong> Senin - Jumat, 09:00 - 21:30 WIT
+            </div>
+        </div>
+
+        <form>
+            <h2>Formulir Kontak</h2>
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" placeholder="contoh@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" placeholder="Tulis pesan Anda..." required></textarea>
+            </div>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </div>
+
+    <footer>
+        © 2025 TokoOnline. Semua Hak Dilindungi.
+    </footer>
+
+</body>
+
+</html>

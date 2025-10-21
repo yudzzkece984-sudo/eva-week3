@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk Kami</title>
+    <style>
+        :root {
+            --primary: #00ff62;
+            --secondary: #00ff62;
+            --bg: #f9fafb;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --white: #ffffff;
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            font-size: 1.2rem;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+
+        .product-info p {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius);
+            transition: background 0.2s;
+        }
+
+        .buy-btn:hover {
+            background-color: var(--secondary);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background: var(--secondary);
+            color: white;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            .product-info h3 {
+                font-size: 1rem;
+            }
+
+            .product-card img {
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Produk Kami</h1>
+        <p>Pilih produk terbaik dari toko online kami</p>
+    </header>
+
+    <div class="container">
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="/halaman img/e5803883-1b8e-43fa-b3b8-1f297546b2eb.jpeg" alt="Produk 1">
+                <div class="product-info">
+                    <h3>Sauvage Dior Cleanser</h3>
+                    <p>Sauvage Face Cleanser and Mask tersusun dari 85%* bahan asal alami. Diresapi dengan ekstrak
+                        kaktus yang dikenal karena sifat eksfoliasi dan pembersihannya, produk ini dapat digunakan
+                        setiap hari sebagai pembersih wajah dan secara berkala sebagai masker untuk membersihkan kulit..
+                    </p>
+                    <span class="price">Rp450.000</span><br>
+                    <a href="#" class="buy-btn">Tambah ke Keranjang</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="/halaman img/d83771c1-3d3d-4f6e-b01c-b17f2bdbb3c7.jpeg" alt="Produk 2">
+                <div class="product-info">
+                    <h3>Dior HOMME Parfume</h3>
+                    <p>DIOR HOMME PARFUM mengandung cendana dari Sri Lanka, Wewangian ini tersedia dalam botol kaca khas
+                        berukuran 75 ml.</p>
+                    <span class="price">Rp700.000</span><br>
+                    <a href="#" class="buy-btn">Tambah ke Keranjang</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="/halaman img/c1eba225-ece1-4d8a-bd40-2b024e5fda84.jpeg" alt="Produk 3">
+                <div class="product-info">
+                    <h3>Firming Smoothing Care</h3>
+                    <p>Dapat mencegah kulit kendur setelah diet, meningkatkan elastisitas kulit.</p>
+                    <span class="price">Rp350.000</span><br>
+                    <a href="#" class="buy-btn">Tambah ke Keranjang</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="/halaman img/0712e8a1-ca09-471c-85d8-7275cb857e3b.jpeg" alt="bodywash">
+                <h3>Shower Gel Sauvage</h3>
+                <p>Body wash yang wangi dan berkualitas tinggi dari sauvage x dior.</p>
+                <span class="price">Rp500.000</span><br>
+                <a href="#" class="buy-btn">Tambah ke Keranjang</a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <footer>
+        © 2025 TokoOnline. Semua Hak Dilindungi.
+    </footer>
+
+</body>
+
+</html>
